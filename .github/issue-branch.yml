@@ -1,6 +1,9 @@
 branchName: '${issue.title,}--issue-${issue.number}^'
 mode: auto
 defaultBranch: 'master'
+copyIssueLabelsToPR: true
+copyIssueProjectsToPR: true
+copyIssueMilestoneToPR: true
 branches:
   - label: question
     skip: true
