@@ -1,5 +1,6 @@
 branchName: '${issue.title,}--issue-${issue.number}^'
 mode: auto
+openPR: true
 defaultBranch: 'master'
 copyIssueLabelsToPR: true
 copyIssueProjectsToPR: true
