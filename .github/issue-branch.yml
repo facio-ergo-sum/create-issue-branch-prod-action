@@ -1,4 +1,4 @@
-branchName: '${issue.title,}--issue-${issue.number}^'
+branchName: '${issue.title,}-${%DATE_VAR}-issue-${issue.number}^'
 mode: auto
 openPR: true
 defaultBranch: 'master'
