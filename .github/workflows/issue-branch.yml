@@ -9,6 +9,10 @@ jobs:
     create_issue_branch_job:
         runs-on: ubuntu-latest
         steps:
+        - name: Set date environment variable value
+          run: |
+            today=$(date +'%d-%m-%Y')
+            echo "DATE_VAR=$today" >> $GITHUB_ENV
         - name: Create Issue Branch
           id: Create_Issue_Branch
           uses: robvanderleek/create-issue-branch@staging
