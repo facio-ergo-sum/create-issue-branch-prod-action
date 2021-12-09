@@ -1,7 +1,7 @@
-branchName: '${issue.title,}-${%DATE_VAR}-issue-${issue.number}^'
-mode: auto
-openPR: true
-defaultBranch: 'master'
-copyIssueLabelsToPR: true
-copyIssueProjectsToPR: true
-copyIssueMilestoneToPR: true
+# branchName: '${issue.title,}-${%DATE_VAR}-issue-${issue.number}^'
+# mode: auto
+# openPR: true
+# defaultBranch: 'master'
+# copyIssueLabelsToPR: true
+# copyIssueProjectsToPR: true
+# copyIssueMilestoneToPR: true
