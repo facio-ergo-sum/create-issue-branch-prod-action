@@ -18,5 +18,7 @@ jobs:
           uses: robvanderleek/create-issue-branch@staging
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        - name: Echo branch name
+        - name: Echo branch name (using output variable)
           run: echo ${{ steps.Create_Issue_Branch.outputs.branchName }}
+        - name: Echo branch name (using environment variable)
+          run: echo $branchName
