@@ -20,10 +20,3 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         - name: Echo branch name (using output variable)
           run: echo ${{ steps.Create_Issue_Branch.outputs.branchName }}
-        - name: Set color
-          id: random-color-generator
-          run: echo "SELECTED_COLOR=green" >> "$GITHUB_OUTPUT"
-        - name: Get color
-          env:
-            SELECTED_COLOR: ${{ steps.random-color-generator.outputs.SELECTED_COLOR }}
-          run: echo "The selected color is $SELECTED_COLOR"
