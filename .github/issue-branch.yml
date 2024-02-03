@@ -1,7 +1,6 @@
 # branchName: '${issue.title,}-${%DATE_VAR}-issue-${issue.number}^'
 mode: immediate
-# openPR: true
-# defaultBranch: 'master'
-# copyIssueLabelsToPR: true
-# copyIssueProjectsToPR: true
-# copyIssueMilestoneToPR: true
+openPR: true
+copyIssueLabelsToPR: true
+copyIssueProjectsToPR: true
+copyIssueMilestoneToPR: true
