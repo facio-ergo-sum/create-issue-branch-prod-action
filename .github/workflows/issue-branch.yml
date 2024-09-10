@@ -15,7 +15,7 @@ jobs:
             echo "DATE_VAR=$today" >> $GITHUB_ENV
         - name: Create Issue Branch
           id: Create_Issue_Branch
-          uses: robvanderleek/create-issue-branch@issue-894-Add_docker_configuration
+          uses: robvanderleek/create-issue-branch@staging
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         - name: Echo branch name (using output variable)
