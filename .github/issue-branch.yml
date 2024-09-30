@@ -1,5 +1,5 @@
 # branchName: '${issue.title,}-${%DATE_VAR}-issue-${issue.number}^'
-mode: immediate
+mode: chatops
 openPR: true
 copyIssueLabelsToPR: true
 copyIssueProjectsToPR: true
