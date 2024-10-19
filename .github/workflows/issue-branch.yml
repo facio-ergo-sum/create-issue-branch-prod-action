@@ -17,6 +17,6 @@ jobs:
           id: Create_Issue_Branch
           uses: robvanderleek/create-issue-branch@staging
           env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GITHUB_TOKEN: ${{ secrets.CIB_GITHUB_TOKEN }}
         - name: Echo branch name (using output variable)
           run: echo ${{ steps.Create_Issue_Branch.outputs.branchName }}
